@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Vagas - Muriaé/MG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU -->
+    <header class="topo">
+        <div class="container header-flex">
+            <div class="logo">
+                <i class="fa-solid fa-briefcase"></i>
+                <div>
+                    <h1>Conecta Vagas</h1>
+                    <span>Oportunidades para o seu futuro</span>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#inicio" class="ativo">Início</a></li>
+                    <li><a href="#vagas">Vagas</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CARROSSEL (IMAGENS NA PASTA IMG) -->
+    <section id="inicio" class="carrossel">
+        <div class="slide ativo" style="background-image: linear-gradient(to right, rgba(13, 43, 82, 0.92), rgba(13, 43, 82, 0.4)), url('img/banner1.jpeg');">
+            <div class="container slide-conteudo">
+                <h2>Conectando<br><span>Talentos e Empresas</span></h2>
+                <p>Encontre oportunidades de trabalho em Muriaé/MG e dê o próximo passo na sua carreira.</p>
+                <a href="#vagas" class="btn-destaque">Buscar Vagas <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(to right, rgba(13, 43, 82, 0.92), rgba(13, 43, 82, 0.4)), url('img/banner2.jpeg');">
+            <div class="container slide-conteudo">
+                <h2>Prepare-se para<br><span>O Mercado Atual</span></h2>
+                <p>Confira nossas orientações sobre currículo, entrevistas e qualificação profissional.</p>
+                <a href="#dicas" class="btn-destaque">Ver Dicas <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(to right, rgba(13, 43, 82, 0.92), rgba(13, 43, 82, 0.4)), url('img/banner3.jpeg');">
+            <div class="container slide-conteudo">
+                <h2>Iniciativa<br><span>Comunitária Local</span></h2>
+                <p>Apoio gratuito para jovens e profissionais de Muriaé e região em busca de recolocação.</p>
+                <a href="#video" class="btn-destaque">Assistir Vídeo <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Botões de navegação do carrossel -->
+        <button class="seta anterior" id="btn-anterior" aria-label="Slide anterior">&#10094;</button>
+        <button class="seta proximo" id="btn-proximo" aria-label="Próximo slide">&#10095;</button>
+
+        <!-- Indicadores (bolinhas) -->
+        <div class="indicadores">
+            <span class="dot ativo" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- FAIXA DE BENEFÍCIOS / DIFERENCIAIS -->
+    <section class="faixa-info">
+        <div class="container info-grid">
+            <div class="info-item">
+                <i class="fa-regular fa-user"></i>
+                <div>
+                    <strong>Vagas Atualizadas</strong>
+                    <span>Novas oportunidades ilustrativas</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-building"></i>
+                <div>
+                    <strong>Diversas Áreas</strong>
+                    <span>Tecnologia, Indústria e Comércio</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-file-lines"></i>
+                <div>
+                    <strong>Dicas de Currículo</strong>
+                    <span>Orientações práticas para candidatos</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-bell"></i>
+                <div>
+                    <strong>Foco em Muriaé/MG</strong>
+                    <span>Informação clara e acessível</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL: 4 CARDS DE VAGAS + VÍDEO -->
+    <main class="container secao-principal">
+        <div class="layout-duplo">
+            
+            <!-- COLUNA ESQUERDA: VAGAS EM DESTAQUE (4 CARDS) -->
+            <section id="vagas" class="coluna-vagas">
+                <h2 class="titulo-secao">Vagas em Destaque</h2>
+                <p class="aviso-demo">* Oportunidades ilustrativas para fins demonstrativos.</p>
+
+                <div class="grid-vagas">
+                    <!-- VAGA 1 -->
+                    <article class="card-vaga">
+                        <div class="card-topo">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <div>
+                                <h3>Desenvolvedor Web</h3>
+                                <span class="area">Tecnologia</span>
+                            </div>
+                        </div>
+                        <ul class="card-dados">
+                            <li><i class="fa-solid fa-location-dot"></i> Muriaé/MG</li>
+                            <li><i class="fa-solid fa-briefcase"></i> CLT</li>
+                        </ul>
+                        <div class="detalhes-vaga" hidden>
+                            <p><strong>Descrição:</strong> Apoio na criação de páginas responsivas com HTML, CSS e JavaScript básico. Carga horária de 40h semanais.</p>
+                        </div>
+                        <button class="btn-detalhes">Ver detalhes</button>
+                    </article>
+
+                    <!-- VAGA 2 -->
+                    <article class="card-vaga">
+                        <div class="card-topo">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <div>
+                                <h3>Assistente Administrativo</h3>
+                                <span class="area">Administrativo</span>
+                            </div>
+                        </div>
+                        <ul class="card-dados">
+                            <li><i class="fa-solid fa-location-dot"></i> Muriaé/MG</li>
+                            <li><i class="fa-solid fa-briefcase"></i> CLT</li>
+                        </ul>
+                        <div class="detalhes-vaga" hidden>
+                            <p><strong>Descrição:</strong> Organização de documentos, atendimento telefônico, controle de planilhas e suporte às rotinas de escritório.</p>
+                        </div>
+                        <button class="btn-detalhes">Ver detalhes</button>
+                    </article>
+
+                    <!-- VAGA 3 -->
+                    <article class="card-vaga">
+                        <div class="card-topo">
+                            <i class="fa-solid fa-industry"></i>
+                            <div>
+                                <h3>Auxiliar de Produção</h3>
+                                <span class="area">Indústria</span>
+                            </div>
+                        </div>
+                        <ul class="card-dados">
+                            <li><i class="fa-solid fa-location-dot"></i> Muriaé/MG</li>
+                            <li><i class="fa-solid fa-briefcase"></i> Efetivo</li>
+                        </ul>
+                        <div class="detalhes-vaga" hidden>
+                            <p><strong>Descrição:</strong> Atuação na linha de montagem, conferência de qualidade e organização do setor produtivo. Não exige experiência.</p>
+                        </div>
+                        <button class="btn-detalhes">Ver detalhes</button>
+                    </article>
+
+                    <!-- VAGA 4 -->
+                    <article class="card-vaga">
+                        <div class="card-topo">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <h3>Atendente de Suporte</h3>
+                                <span class="area">Atendimento</span>
+                            </div>
+                        </div>
+                        <ul class="card-dados">
+                            <li><i class="fa-solid fa-location-dot"></i> Muriaé/MG</li>
+                            <li><i class="fa-solid fa-briefcase"></i> Híbrido (Estágio)</li>
+                        </ul>
+                        <div class="detalhes-vaga" hidden>
+                            <p><strong>Descrição:</strong> Atendimento ao cliente via chat e e-mail, registro de chamados e auxílio na resolução de dúvidas frequentes.</p>
+                        </div>
+                        <button class="btn-detalhes">Ver detalhes</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- COLUNA DIREITA: VÍDEO INCORPORADO -->
+            <aside id="video" class="coluna-video">
+                <h2 class="titulo-secao">Dicas de Carreira</h2>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/5b51C6a8G2U" 
+                        title="Como se preparar para o mercado de trabalho" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="legenda-video">Assista às orientações essenciais para se destacar nos processos seletivos em Muriaé e região.</p>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- SEÇÃO: 3 CARDS INFORMATIVOS (DICAS DE CARREIRA) -->
+    <section id="dicas" class="secao-dicas">
+        <div class="container">
+            <h2 class="titulo-secao">Orientações Profissionais</h2>
+            <div class="grid-dicas">
+                
+                <!-- DICA 1: CURRÍCULO -->
+                <div class="card-dica">
+                    <div class="icone-dica"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Elaboração de Currículo</h3>
+                    <p>Mantenha o documento objetivo (máximo 2 páginas), destaque suas habilidades principais, revise a ortografia e atualize seus dados de contato.</p>
+                </div>
+
+                <!-- DICA 2: ENTREVISTAS -->
+                <div class="card-dica">
+                    <div class="icone-dica"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Preparação para Entrevistas</h3>
+                    <p>Pesquise sobre a empresa antes da conversa, chegue com antecedência e demonstre interesse em aprender e contribuir com a equipe.</p>
+                </div>
+
+                <!-- DICA 3: ATUALIZAÇÃO PROFISSIONAL -->
+                <div class="card-dica">
+                    <div class="icone-dica"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Atualização Profissional</h3>
+                    <p>Busque cursos de qualificação técnica, participe de oficinas comunitárias e mantenha-se atualizado sobre ferramentas digitais do mercado.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ E CONTATO -->
+    <footer id="contato" class="rodape">
+        <div class="container rodape-flex">
+            <div class="logo-rodape">
+                <i class="fa-solid fa-briefcase"></i>
+                <div>
+                    <strong>Conecta Vagas</strong>
+                    <span>Oportunidades para o seu futuro</span>
+                </div>
+            </div>
+
+            <div class="rodape-centro">
+                <nav class="menu-rodape">
+                    <a href="#inicio">Início</a>
+                    <a href="#vagas">Vagas</a>
+                    <a href="#dicas">Dicas</a>
+                    <a href="#video">Vídeo</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <p>Muriaé/MG | contato@conectavagas-demo.org.br | (32) 90000-0000</p>
+                <p class="copyright">&copy; 2026 Conecta Vagas. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="redes-sociais">
+                <a href="#contato" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#video" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#contato" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
